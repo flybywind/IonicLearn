@@ -39,6 +39,9 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
   };
+  $scope.clickMe = function() {
+    alert("click me in APP!")
+  };
 })
 
 .controller('PlaylistsCtrl', function($scope) {
@@ -58,6 +61,9 @@ angular.module('starter.controllers', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 }
   ];
+  $scope.clickMe = function() {
+    alert("click me in PlaylistsCtrl!")
+  };
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
